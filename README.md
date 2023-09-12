@@ -26,6 +26,8 @@ As a developer you can create a quiz application for testing coding skills of ot
 
 -   [Open Trivia Database](https://opentdb.com/api_config.php)
 
+
+
 ## Example projects
 
 -   [Quiz app built with React](http://tranquil-beyond-43849.herokuapp.com/) (wait for it to load as it is hosted on Heroku)
