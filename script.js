@@ -51,6 +51,8 @@ function startQuiz(){
     showQuestion();
 }
 
+startQuiz();
+
 function showQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -70,6 +72,8 @@ function showQuestion(){
     });
 }
 
+showQuestion();
+
 function resetState() {
     nextButton.style.display = "none";
     while(answerButtons.firstChild){
@@ -77,6 +81,8 @@ function resetState() {
     }
 
 }
+
+resetState();
 
 function selectAnswer(){
     const selectedBtn = e.target;
@@ -96,12 +102,16 @@ function selectAnswer(){
     nextButton.style.display = "block";
 }
 
+selectAnswer();
+
 function showScore (){
     resetState();
     questionElement.innerHTML = `you scored ${score} out of{questions.length}!`;
     nextButton.innerHTML = "play again"
     nextButton.style.display = "block";
 }
+
+
 
 function handleNextButton(){
     currentQuestionIndex++;
@@ -122,4 +132,3 @@ function handleNextButton(){
 
 
 
-startQuiz();
